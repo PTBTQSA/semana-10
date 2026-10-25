@@ -7,7 +7,7 @@ def converte(numeroEmRomano):
   tabela['L'] = 50;
   tabela['C'] = 100;
   tabela['D'] = 500;
-  tabela['M'] = 10000;
+  tabela['M'] = 1000;
   
   acumulador = 0;
   ultimovizinhodireita = 0;
@@ -19,7 +19,7 @@ def converte(numeroEmRomano):
 
     multiplicador = 1;
     if(atual < ultimovizinhodireita):
-      multiplicador = 1;
+      multiplicador = -1;
 
     acumulador += atual * multiplicador;       
     ultimovizinhodireita = atual;
